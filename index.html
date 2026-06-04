@@ -1,0 +1,562 @@
+<!-- Declara que este documento utiliza HTML5. -->
+<!DOCTYPE html>
+
+<!-- Inicia o documento HTML e informa que o idioma principal da página é português do Brasil. -->
+<html lang="pt-BR">
+
+<!-- Inicia a área de configurações da página, que não aparece diretamente no conteúdo visual. -->
+<head>
+
+    <!-- Define a codificação de caracteres como UTF-8, permitindo acentos e caracteres especiais. -->
+    <meta charset="UTF-8">
+
+    <!-- Ajusta a página para funcionar melhor em celulares, tablets e telas de diferentes tamanhos. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título que aparecerá na aba do navegador. -->
+    <title>Forno &amp; Afeto | Padaria artesanal em Brasília</title>
+
+    <!-- Conecta este arquivo HTML ao arquivo CSS responsável pela aparência visual da página. -->
+    <link rel="stylesheet" href="css/style.css">
+
+<!-- Fecha a área de configurações da página. -->
+</head>
+
+<!-- Inicia o corpo da página, ou seja, tudo o que será exibido ao usuário. -->
+<!-- O id "topo" permite criar um link interno para voltar ao início da página. -->
+<body id="topo">
+
+    <!-- Inicia o cabeçalho principal da página, onde ficam a marca e o menu de navegação. -->
+    <header id="cabecalho" class="cabecalho-principal">
+
+        <!-- Agrupa o conteúdo interno do cabeçalho, funcionando como um contêiner semântico. -->
+        <section class="container cabecalho-conteudo">
+
+            <!-- Agrupa o título da marca e seu subtítulo. -->
+            <hgroup class="marca">
+
+                <!-- Título principal da página, usado para identificar a marca do site. -->
+                <h1 class="marca-titulo">Forno &amp; Afeto</h1>
+
+                <!-- Subtítulo da marca, explicando brevemente o tipo de negócio. -->
+                <p class="marca-subtitulo">Padaria artesanal em Brasília</p>
+
+            <!-- Fecha o agrupamento da marca. -->
+            </hgroup>
+
+            <!-- Inicia o menu principal de navegação da página. -->
+            <nav id="menu-principal" class="menu-principal">
+
+                <!-- Cria uma lista não ordenada para organizar os links do menu. -->
+                <ul class="menu-lista">
+
+                    <!-- Item do menu que leva o usuário para o topo da página. -->
+                    <li class="menu-item">
+                        <!-- Link interno para o elemento com id "topo". -->
+                        <a href="#topo" class="menu-link">Início</a>
+                    </li>
+
+                    <!-- Item do menu que leva o usuário para a seção de destaques. -->
+                    <li class="menu-item">
+                        <!-- Link interno para o elemento com id "destaques". -->
+                        <a href="#destaques" class="menu-link">Destaques</a>
+                    </li>
+
+                    <!-- Item do menu que leva o usuário para a seção sobre a história da padaria. -->
+                    <li class="menu-item">
+                        <!-- Link interno para o elemento com id "nossa-historia". -->
+                        <a href="#nossa-historia" class="menu-link">Nossa história</a>
+                    </li>
+
+                    <!-- Item do menu que leva o usuário para a seção de encomendas. -->
+                    <li class="menu-item">
+                        <!-- Link interno para o elemento com id "encomendas". -->
+                        <a href="#encomendas" class="menu-link">Encomendas</a>
+                    </li>
+
+                    <!-- Item do menu que leva o usuário para o bloco de contato. -->
+                    <li class="menu-item">
+                        <!-- Link interno para o elemento com id "contato". -->
+                        <a href="#contato" class="menu-link">Contato</a>
+                    </li>
+
+                <!-- Fecha a lista de links do menu. -->
+                </ul>
+
+            <!-- Fecha o menu de navegação. -->
+            </nav>
+
+        <!-- Fecha o agrupamento interno do cabeçalho. -->
+        </section>
+
+    <!-- Fecha o cabeçalho principal da página. -->
+    </header>
+
+    <!-- Inicia o conteúdo principal da página. -->
+    <!-- A tag main deve concentrar o conteúdo central e mais importante do documento. -->
+    <main id="conteudo-principal" class="conteudo-principal">
+
+        <!-- Inicia a seção de banner, que apresenta a chamada principal da página. -->
+        <section id="banner" class="secao-banner">
+
+            <!-- Agrupa o conteúdo interno do banner. -->
+            <section class="container banner-conteudo">
+
+                <!-- Cria um bloco de conteúdo textual para a apresentação inicial da padaria. -->
+                <article class="banner-texto">
+
+                    <!-- Frase curta de destaque, funcionando como uma chamada introdutória. -->
+                    <p class="banner-destaque">Receitas artesanais, café fresco e sabor de cuidado.</p>
+
+                    <!-- Título principal do banner, com a promessa central da página. -->
+                    <h2 class="banner-titulo">
+                        Pães, doces e cafés preparados para tornar o seu dia mais acolhedor.
+                    </h2>
+
+                    <!-- Parágrafo que descreve melhor a proposta da padaria. -->
+                    <p class="banner-descricao">
+                        Na Forno &amp; Afeto, cada fornada é pensada para unir sabor, cuidado e simplicidade.
+                        Nossa padaria combina receitas artesanais, ingredientes selecionados e um ambiente
+                        de bairro onde o café da manhã, o lanche da tarde e as encomendas especiais ganham
+                        um toque caseiro.
+                    </p>
+
+                    <!-- Agrupa os links de ação do banner, que serão estilizados como botões pelo CSS. -->
+                    <p class="banner-botoes">
+
+                        <!-- Link que leva o usuário para a seção de destaques. -->
+                        <a href="#destaques" class="botao botao-primario">Ver destaques</a>
+
+                        <!-- Link que leva o usuário para a seção de encomendas. -->
+                        <a href="#encomendas" class="botao botao-secundario">Fazer encomenda</a>
+
+                    <!-- Fecha o agrupamento dos botões do banner. -->
+                    </p>
+
+                <!-- Fecha o bloco textual do banner. -->
+                </article>
+
+                <!-- Agrupa a imagem principal do banner. -->
+                <figure class="banner-imagem">
+
+                    <!-- Insere uma imagem externa relacionada a pães, doces e café. -->
+                    <img
+                        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80"
+                        alt="Mesa com pães artesanais, croissants, bolo caseiro e xícaras de café">
+
+                <!-- Fecha a figura do banner. -->
+                </figure>
+
+            <!-- Fecha o agrupamento interno do banner. -->
+            </section>
+
+        <!-- Fecha a seção de banner. -->
+        </section>
+
+        <!-- Inicia a seção de destaques da semana. -->
+        <section id="destaques" class="secao-destaques">
+
+            <!-- Agrupa o conteúdo interno da seção de destaques. -->
+            <section class="container">
+
+                <!-- Inicia o cabeçalho da seção, com etiqueta, título e descrição. -->
+                <header class="secao-topo">
+
+                    <!-- Pequena etiqueta textual que introduz o tema da seção. -->
+                    <p class="secao-etiqueta">Sabores da casa</p>
+
+                    <!-- Título da seção de destaques. -->
+                    <h2 class="secao-titulo">Destaques da semana</h2>
+
+                    <!-- Parágrafo que explica o conteúdo apresentado na seção. -->
+                    <p class="secao-descricao">
+                        Conheça alguns dos itens mais procurados pelos clientes da casa. Todos os produtos
+                        são preparados com atenção à qualidade, ao sabor e à experiência de quem busca
+                        uma pausa gostosa no dia.
+                    </p>
+
+                <!-- Fecha o cabeçalho da seção de destaques. -->
+                </header>
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Fecha o cabeçalho da seção de destaques. -->
+                </header>
+
+                <!--
+                    Cria a área de mensagem que será atualizada pelo JavaScript.
+                    Essa área aparece antes dos cards para orientar o usuário sobre a interação.
+                -->
+                <aside class="mensagem-destaque" aria-live="polite">
+
+                    <!--
+                        Parágrafo que receberá o texto dinâmico.
+                        O id "mensagem-destaque" será usado no JavaScript para localizar este elemento.
+                    -->
+                    <p id="mensagem-destaque">
+                        Clique em um dos destaques para ver uma sugestão de consumo.
+                    </p>
+
+                <!-- Fecha a área de mensagem dos destaques. -->
+                </aside>
+
+                <!-- Inicia a grade que reúne os cards de produtos destacados. -->
+                <section class="grade-destaques">
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Inicia a grade que reúne os cards de produtos destacados. -->
+                <section class="grade-destaques">
+
+                    <!-- Inicia o primeiro card de produto destacado. -->
+                    <article class="card-destaque card-interativo"data-produto="pao">
+
+                        <!-- Agrupa a imagem do primeiro produto. -->
+                        <figure class="card-imagem">
+
+                            <!-- Insere a imagem do pão rústico. -->
+                            <img
+                                src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=700&q=80"
+                                alt="Pão rústico de fermentação natural">
+
+                        <!-- Fecha a figura do primeiro produto. -->
+                        </figure>
+
+                        <!-- Agrupa o conteúdo textual do primeiro card. -->
+                        <section class="card-conteudo">
+
+                            <!-- Título do primeiro produto. -->
+                            <h3 class="card-titulo">Pão rústico de fermentação natural</h3>
+
+                            <!-- Descrição do primeiro produto. -->
+                            <p class="card-texto">
+                                Casca crocante, miolo macio e fermentação lenta para realçar aroma,
+                                textura e sabor.
+                            </p>
+
+                        <!-- Fecha o conteúdo textual do primeiro card. -->
+                        </section>
+
+                    <!-- Fecha o primeiro card de produto. -->
+                    </article>
+
+                    <!-- Inicia o segundo card de produto destacado. -->
+                    <article class="card-destaque card-interativo"data-produto="croissant">
+
+                        <!-- Agrupa a imagem do segundo produto. -->
+                        <figure class="card-imagem">
+
+                            <!-- Insere a imagem do croissant. -->
+                            <img
+                                src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=700&q=80"
+                                alt="Croissant amanteigado dourado">
+
+                        <!-- Fecha a figura do segundo produto. -->
+                        </figure>
+
+                        <!-- Agrupa o conteúdo textual do segundo card. -->
+                        <section class="card-conteudo">
+
+                            <!-- Título do segundo produto. -->
+                            <h3 class="card-titulo">Croissant amanteigado</h3>
+
+                            <!-- Descrição do segundo produto. -->
+                            <p class="card-texto">
+                                Folhado leve, dourado e delicado, ideal para acompanhar café coado
+                                ou cappuccino.
+                            </p>
+
+                        <!-- Fecha o conteúdo textual do segundo card. -->
+                        </section>
+
+                    <!-- Fecha o segundo card de produto. -->
+                    </article>
+
+                    <!-- Inicia o terceiro card de produto destacado. -->
+                    <article class="card-destaque card-interativo"data-produto="bolo">
+
+                        <!-- Agrupa a imagem do terceiro produto. -->
+                        <figure class="card-imagem">
+
+                            <!-- Insere a imagem do bolo caseiro de laranja. -->
+                            <img
+                                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+                                alt="Fatia de bolo caseiro de laranja">
+
+                        <!-- Fecha a figura do terceiro produto. -->
+                        </figure>
+
+                        <!-- Agrupa o conteúdo textual do terceiro card. -->
+                        <section class="card-conteudo">
+
+                            <!-- Título do terceiro produto. -->
+                            <h3 class="card-titulo">Bolo caseiro de laranja</h3>
+
+                            <!-- Descrição do terceiro produto. -->
+                            <p class="card-texto">
+                                Receita tradicional com cobertura suave, perfeita para o lanche da tarde
+                                e para partilhar.
+                            </p>
+
+                        <!-- Fecha o conteúdo textual do terceiro card. -->
+                        </section>
+
+                    <!-- Fecha o terceiro card de produto. -->
+                    </article>
+
+                    <!-- Inicia o quarto card de produto destacado. -->
+                    <article class="card-destaque card-interativo"data-produto="cafe">
+
+                        <!-- Agrupa a imagem do quarto produto. -->
+                        <figure class="card-imagem">
+
+                            <!-- Insere a imagem do café coado. -->
+                            <img
+                                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=80"
+                                alt="Xícara de café coado especial">
+
+                        <!-- Fecha a figura do quarto produto. -->
+                        </figure>
+
+                        <!-- Agrupa o conteúdo textual do quarto card. -->
+                        <section class="card-conteudo">
+
+                            <!-- Título do quarto produto. -->
+                            <h3 class="card-titulo">Café coado especial</h3>
+
+                            <!-- Descrição do quarto produto. -->
+                            <p class="card-texto">
+                                Grãos selecionados e preparo cuidadoso para uma bebida equilibrada,
+                                aromática e acolhedora.
+                            </p>
+
+                        <!-- Fecha o conteúdo textual do quarto card. -->
+                        </section>
+
+                    <!-- Fecha o quarto card de produto. -->
+                    </article>
+
+                <!-- Fecha a grade de destaques. -->
+                </section>
+
+            <!-- Fecha o agrupamento interno da seção de destaques. -->
+            </section>
+
+        <!-- Fecha a seção de destaques. -->
+        </section>
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- Inicia a seção que apresenta a história da padaria. -->
+        <section id="nossa-historia" class="secao-historia">
+
+            <!-- Agrupa a imagem e o texto da seção de história. -->
+            <section class="container historia-conteudo">
+
+                <!-- Agrupa a imagem da seção de história. -->
+                <figure class="historia-imagem">
+
+                    <!-- Insere uma imagem que representa o ambiente interno de uma padaria. -->
+                    <img
+                        src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
+                        alt="Interior acolhedor de uma padaria com balcão e produtos expostos">
+
+                <!-- Fecha a figura da seção de história. -->
+                </figure>
+
+                <!-- Inicia o conteúdo textual sobre a história e a proposta da padaria. -->
+                <article class="historia-texto">
+
+                    <!-- Inicia o cabeçalho do bloco textual da história. -->
+                    <header class="secao-topo">
+
+                        <!-- Pequena etiqueta que introduz a seção institucional. -->
+                        <p class="secao-etiqueta">Quem somos</p>
+
+                        <!-- Título da seção sobre a história da padaria. -->
+                        <h2 class="secao-titulo">Uma padaria feita para acolher</h2>
+
+                    <!-- Fecha o cabeçalho do bloco textual da história. -->
+                    </header>
+
+                    <!-- Primeiro parágrafo da história da padaria. -->
+                    <p class="historia-paragrafo">
+                        A Forno &amp; Afeto nasceu da vontade de criar um espaço em que o alimento também
+                        fosse memória, pausa e encontro. Inspirada nas antigas padarias de bairro,
+                        nossa proposta valoriza produção artesanal, ambiente agradável e receitas que
+                        despertam familiaridade.
+                    </p>
+
+                    <!-- Segundo parágrafo da história da padaria. -->
+                    <p class="historia-paragrafo">
+                        Aqui, cada detalhe importa: do pão que sai quente do forno ao café servido com
+                        calma para quem escolhe começar ou encerrar o dia conosco. Mais do que vender
+                        produtos, queremos oferecer uma experiência simples, saborosa e próxima.
+                    </p>
+
+                <!-- Fecha o conteúdo textual da seção de história. -->
+                </article>
+
+            <!-- Fecha o agrupamento interno da seção de história. -->
+            </section>
+
+        <!-- Fecha a seção de história. -->
+        </section>
+
+        <!-- Inicia a seção de informações sobre encomendas, horários, contato e endereço. -->
+        <section id="encomendas" class="secao-informacoes">
+
+            <!-- Agrupa o conteúdo interno da seção de informações. -->
+            <section class="container">
+
+                <!-- Inicia o cabeçalho da seção de informações úteis. -->
+                <header class="secao-topo">
+
+                    <!-- Pequena etiqueta que apresenta o tipo de conteúdo da seção. -->
+                    <p class="secao-etiqueta">Informações úteis</p>
+
+                    <!-- Título da seção de informações. -->
+                    <h2 class="secao-titulo">Encomendas, horários e atendimento</h2>
+
+                    <!-- Parágrafo introdutório da seção de informações. -->
+                    <p class="secao-descricao">
+                        Organizamos pedidos especiais para diferentes momentos do seu dia. Consulte
+                        disponibilidade, horários e formas de atendimento.
+                    </p>
+
+                <!-- Fecha o cabeçalho da seção de informações. -->
+                </header>
+
+                <!-- Inicia a grade que organiza os blocos de informações úteis. -->
+                <section class="grade-informacoes">
+
+                    <!-- Inicia o bloco de informações sobre encomendas especiais. -->
+                    <article class="bloco-informacao">
+
+                        <!-- Título do bloco sobre encomendas. -->
+                        <h3 class="bloco-titulo">Encomendas especiais</h3>
+
+                        <!-- Texto explicando quais tipos de encomenda são aceitos. -->
+                        <p class="bloco-texto">
+                            Aceitamos encomendas de bolos caseiros, caixas de café da manhã, pães
+                            artesanais e tábuas para encontros e celebrações simples.
+                        </p>
+
+                    <!-- Fecha o bloco de informações sobre encomendas especiais. -->
+                    </article>
+
+                    <!-- Inicia o bloco de informações sobre horário de funcionamento. -->
+                    <article class="bloco-informacao">
+
+                        <!-- Título do bloco sobre horários. -->
+                        <h3 class="bloco-titulo">Horário de funcionamento</h3>
+
+                        <!-- Informa o horário de funcionamento de segunda a sábado. -->
+                        <p class="bloco-texto">Segunda a sábado, das 6h30 às 20h.</p>
+
+                        <!-- Informa o horário de funcionamento aos domingos e feriados. -->
+                        <p class="bloco-texto">Domingos e feriados, das 7h às 13h.</p>
+
+                    <!-- Fecha o bloco de horário de funcionamento. -->
+                    </article>
+
+                    <!-- Inicia o bloco de contato. -->
+                    <!-- O id "contato" permite que o link do menu leve diretamente para este bloco. -->
+                    <article class="bloco-informacao" id="contato">
+
+                        <!-- Título do bloco de contato. -->
+                        <h3 class="bloco-titulo">Contato</h3>
+
+                        <!-- Telefone da padaria. -->
+                        <p class="bloco-texto">(61) 3333-2026</p>
+
+                        <!-- E-mail da padaria. -->
+                        <p class="bloco-texto">contato@fornoeafeto.com.br</p>
+
+                    <!-- Fecha o bloco de contato. -->
+                    </article>
+
+                    <!-- Inicia o bloco de endereço. -->
+                    <article class="bloco-informacao">
+
+                        <!-- Título do bloco de endereço. -->
+                        <h3 class="bloco-titulo">Endereço</h3>
+
+                        <!-- Primeira linha do endereço da padaria. -->
+                        <p class="bloco-texto">CLS 208, Bloco C, Loja 12</p>
+
+                        <!-- Segunda linha do endereço da padaria. -->
+                        <p class="bloco-texto">Asa Sul, Brasília – DF</p>
+
+                    <!-- Fecha o bloco de endereço. -->
+                    </article>
+
+                <!-- Fecha a grade de informações úteis. -->
+                </section>
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+                
+                <footer class="acoes-informacoes">
+                    <button class="botao botao-primario botao-encomenda" type="button">
+                        Solicitar encomenda
+                    </button>
+
+                    <section class="orientacoes-encomenda oculto">
+                        <h3 class="orientacoes-titulo">Como fazer sua encomenda</h3>
+
+                        <p class="orientacoes-texto">
+                            ▪️Entre em contato informando o produto desejado, a quantidade, a data de retirada
+                            e qualquer observação importante sobre o pedido.
+                        </p>
+
+                        <p class="orientacoes-texto">
+                            ▪️Para bolos, caixas de café da manhã e pães artesanais, recomendamos solicitar
+                            a encomenda com pelo menos 24 horas de antecedência.
+                        </p>
+                    </section>
+                </footer>
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+            <!-- Fecha o agrupamento interno da seção de informações. -->
+            </section>
+
+        <!-- Fecha a seção de encomendas, horários e atendimento. -->
+        </section>
+
+    <!-- Fecha o conteúdo principal da página. -->
+    </main>
+
+    <!-- Inicia o rodapé principal do site. -->
+    <footer id="rodape" class="rodape-principal">
+
+        <!-- Agrupa o conteúdo interno do rodapé. -->
+        <section class="container rodape-conteudo">
+
+            <!-- Primeiro texto do rodapé, com o nome da padaria em destaque. -->
+            <p class="rodape-texto">
+
+                <!-- Destaca semanticamente o nome da padaria. -->
+                <strong>Forno &amp; Afeto</strong> | Padaria artesanal em Brasília
+
+            <!-- Fecha o primeiro parágrafo do rodapé. -->
+            </p>
+
+            <!-- Segundo texto do rodapé, reforçando a proposta da marca. -->
+            <p class="rodape-texto">
+                Pães, doces, cafés e encomendas com sabor de cuidado.
+            </p>
+
+        <!-- Fecha o agrupamento interno do rodapé. -->
+        </section>
+
+    <!-- Fecha o rodapé principal do site. -->
+    </footer>
+
+    <script src="js/script.js"></script>
+
+<!-- Fecha o corpo da página. -->
+</body>
+
+<!-- Fecha o documento HTML. -->
+</html>
